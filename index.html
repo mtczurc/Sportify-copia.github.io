@@ -10,7 +10,7 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/estilo.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,18 +21,35 @@
   </head>
   <body>
     <!--Barra de Navegação-->
-    <nav class="navbar navbar-fixed-top navbar-default"><!--Barra navegação fixada-->
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente"><!--Barra navegação fixada-->
         <div class="container"><!--Container-->
             <!--header-->
             <div class="navbar-header">
+                <!--botão toggle-->
+                <button type="button" class="navbar-toggle colapsed" 
+                data-toggle="collapse" data-target="#barra-navegacao">
+                    <span class="sr-only">alternar navegação</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--/botão toggle-->
                 <a href="index.html" class="navbar-brand"><!--Para botao-->
-                    Sportify
+                    <span class="img-logo">Spotify</span>
                 </a>
             </div>
             <!--/header-->
             <!--navbar-->
-            <div class="">
+            <div class="collapse navbar-collapse" id="barra-navegacao"><!--para um dispositivo mobile-->
+                <ul class="nav navbar-nav navbar-right">    
+                    <li><a href="">Premium</a></li>
+                    <li><a href="">Ajuda</a></li>
+                    <li><a href="">Baixar</a></li>
+                    <li class="divisor" role="separator"></li>
+                    <li><a href="">Inscreva-se</a></li>
+                    <li><a href="">Entrar</a></li>
 
+                </ul>
             </div>
             <!--/navbar-->
         </div><!--/Container-->

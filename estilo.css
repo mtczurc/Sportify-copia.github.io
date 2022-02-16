@@ -1,0 +1,39 @@
+/*===================== layout =========================*/
+body{
+    
+}
+/* -- Barra de navegação -- */
+.img-logo{
+    height: 40px; /* Altura */
+    width: 132px; /* Largura */
+    display: block;
+    background: url('imagens/spotify.svg') no-repeat;
+    /* border: 1px solid red;*/
+    background-size: contain;/* Serve para definir 
+    que a imagem de fundo tenha os mesmos paremtros deifinidos antes*/
+    color: transparent
+}
+nav.navbar-transparente{
+    padding: 15px 0px; /* Serve para o creenchimento com superior e inferior
+    e nas laterais  */
+    background: rgba(0,0,0, 0.6);
+    border: none;
+}
+.navbar-brand{
+    padding: 5px 15px;
+}
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #43C7FF;
+}
+/*===================== Tipografia =========================*/
