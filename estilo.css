@@ -1,8 +1,16 @@
 /*===================== layout =========================*/
+body,html, .capa{
+   height: 100%; 
+}
 body{
-    
+    background: url('imagens/capa.png'),
+                url('imagens/ruido.png'),
+                linear-gradient(50deg,#ff4169,#7c26f8);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* -- Barra de navegação -- */
+/* -- Logo Inicial -- */
 .img-logo{
     height: 40px; /* Altura */
     width: 132px; /* Largura */
@@ -13,6 +21,8 @@ body{
     que a imagem de fundo tenha os mesmos paremtros deifinidos antes*/
     color: transparent
 }
+/* -- /Logo Inicial -- */
+ 
 nav.navbar-transparente{
     padding: 15px 0px; /* Serve para o creenchimento com superior e inferior
     e nas laterais  */
@@ -36,4 +46,22 @@ nav.navbar-transparente{
 .navbar-inverse .navbar-nav>li>a:hover{
     color: #43C7FF;
 }
+/*--- Imagem de capa*/
+.capa{
+    display: table;
+    width: 100%;
+
+}
+
+.texto-capa{
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
 /*===================== Tipografia =========================*/
+h1{
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -8px;
+}
